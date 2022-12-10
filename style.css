@@ -1,0 +1,74 @@
+body {
+    background-color: #180A0A;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+    margin: 30px 20px;
+    color: #F8B400;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture {
+    width: 500px;
+    margin: 0px 30px;
+}
+
+.btn {
+    font-family: 'Kaushan Script', cursive;
+    height: 60px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #3D0000;
+    color: #F8B400;
+    border: none;
+    font-size: 30px;
+}
+
+
+@media all and (max-width:540px) {
+    .picture {
+        width: 400px;
+        margin: 0px 10px;
+    }
+
+    .btn {
+        height: 60px;
+        width: 80px;
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width:420px) {
+    .container {
+        flex-direction: column;
+    }
+
+    h1 {
+        margin-bottom: 40px;
+    }
+
+    .picture {
+        width: 350px;
+        height: 500;
+        margin: 0px 10px;
+    }
+
+    .btn {
+        height: 60px;
+        width: 200px;
+        font-size: 25px;
+    }
+}
